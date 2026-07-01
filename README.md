@@ -1,72 +1,98 @@
-#  SOC Analyst Portfolio
+# 🛡 SOC Analyst Portfolio
 
 Welcome!
 
-I'm Zac Yu, a SOC Analyst with hands-on experience in security monitoring, incident response, threat hunting, and detection engineering.
+I'm Zac Yu, a SOC Analyst with hands-on experience in security monitoring, incident response, threat hunting and security dashboard development.
 
-This repository showcases real-world investigations and home lab projects built using enterprise security tools.
+This repository showcases both **real-world cybersecurity projects** and **home lab exercises**, demonstrating practical experience across SIEM, EDR, Microsoft Security, network monitoring and SOC operations.
 
 ---
 
-## Core Skills
+# Core Skills
 
 - Security Monitoring
 - Incident Response
 - Threat Hunting
 - Detection Engineering
+- SIEM (Splunk)
 - Microsoft Defender for Endpoint
 - Microsoft Entra ID
-- Splunk Enterprise
-- Cisco Meraki IDS
-- Sysmon
+- Cisco Meraki
+- Kusto Query Language (KQL)
+- Azure Data Explorer (ADX)
 - MITRE ATT&CK
 
 ---
 
-## Featured Projects
+# Portfolio Structure
 
-### 🏗 SOC Lab Architecture
+## 📁 Projects
 
-Design and implementation of a complete SOC home lab.
+Real-world projects completed in production environments.
 
----
+Current projects include:
 
-### 🚨 Incident Response Case Studies
-
-- Windows 4625 Brute Force Investigation
-- PowerShell Execution Investigation
-- Microsoft Defender Incident Investigation
-- Cisco Meraki IDS Investigation
+- Enterprise SOC Monitoring Dashboard Migration
+- Microsoft 365 Overseas Login Detection *(Coming Soon)*
+- Cisco Meraki IDS Investigation *(Coming Soon)*
+- SOC Monthly Reporting *(Coming Soon)*
 
 ---
 
-### 📊 Dashboards
+## 🧪 Home Labs
 
-- Splunk Security Dashboard
-- Grafana Security Dashboard
+Hands-on security labs built to strengthen SOC investigation and detection engineering skills.
+
+Current labs include:
+
+- Splunk SOC Lab
+- Microsoft Defender for Endpoint
+- Atomic Red Team
+- Windows Event 4625 Investigation
+- PowerShell Detection
+- Threat Hunting
 
 ---
 
-### 🧪 Lab Environment
+# Technologies
 
-| Component | Technology |
-|-----------|------------|
+| Area | Technologies |
+|------|--------------|
 | SIEM | Splunk Enterprise |
+| Dashboard | Grafana |
+| Query Language | KQL, SPL |
+| Data Platform | Azure Data Explorer (ADX) |
 | EDR | Microsoft Defender for Endpoint |
 | Identity | Microsoft Entra ID |
-| Endpoint Logging | Sysmon |
-| Attack Simulation | Atomic Red Team |
-| Network Security | Cisco Meraki |
+| Network | Cisco Meraki |
+| Endpoint | Sophos Central |
+| DNS Security | Cisco Umbrella |
 
 ---
 
-## Current Roadmap
+# Current Progress
 
-- [x] Build Splunk Lab
-- [x] Configure Sysmon
-- [x] Deploy Microsoft Defender
-- [x] Integrate Atomic Red Team
-- [ ] Publish Detection Rules
-- [ ] Publish Threat Hunting Queries
-- [ ] Publish Playbooks
-- [ ] Publish Additional Case Studies
+## Production Projects
+
+- ✅ Enterprise SOC Monitoring Dashboard Migration
+- 🚧 Microsoft 365 Overseas Login Detection
+- 🚧 Cisco Meraki IDS Investigation
+- 🚧 SOC Monthly Reporting
+
+---
+
+## Home Lab
+
+- ✅ Splunk Enterprise Lab
+- ✅ Sysmon Integration
+- ✅ Microsoft Defender Lab
+- ✅ Atomic Red Team
+- 🚧 Threat Hunting
+- 🚧 Detection Engineering
+- 🚧 Playbooks
+
+---
+
+# Goal
+
+This portfolio is continuously updated to document real-world security projects, SOC investigations and hands-on laboratory exercises while demonstrating practical cybersecurity skills applicable to Security Operations Centre (SOC) roles.
