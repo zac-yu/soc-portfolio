@@ -71,7 +71,7 @@ Visualises WAN connectivity, uplink status and network resilience across enterpr
 
 ![Meraki Client Activity](images/meraki-client-activity.png)
 
-Provides visibility into connected clients, network usage and operational activity.
+Provides real-time visibility into connected clients, endpoint inventory, client activity and security monitoring, including security event trends and top IDS/IPS signatures.
 
 ---
 
