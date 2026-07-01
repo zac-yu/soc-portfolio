@@ -1,129 +1,147 @@
 # Enterprise SOC Monitoring Dashboard Migration
 
-## Project Overview
+> Migrated enterprise security monitoring dashboards from Splunk to Grafana using Azure Data Explorer (ADX) and Kusto Query Language (KQL).
 
-This project involved migrating enterprise security monitoring dashboards from Splunk to Grafana using Azure Data Explorer (ADX) and Kusto Query Language (KQL).
-
-My responsibility was to develop operational and security dashboards based on production monitoring data to improve visibility across multiple security platforms.
+This project focused on developing operational dashboards that consolidated security data from multiple enterprise platforms into a centralised SOC monitoring solution.
 
 ---
 
 # Business Context
 
-The customer planned to migrate its existing monitoring dashboards from Splunk to Grafana as part of a monitoring platform modernisation initiative.
+The customer planned to modernise its monitoring platform by migrating operational dashboards from Splunk to Grafana.
 
-The dashboards were designed to provide a centralised view of operational and security data collected from multiple enterprise systems.
+My role was to design and develop Grafana dashboards using Azure Data Explorer (ADX) and Kusto Query Language (KQL), enabling SOC analysts to monitor multiple enterprise security platforms through a single interface.
+
+---
+
+# Technical Architecture
+
+Cisco Meraki
+        │
+Sophos Central
+        │
+Cisco Umbrella
+        │
+Microsoft Entra ID
+        │
+Azure Data Explorer (ADX)
+        │
+Grafana
+        │
+SOC Analysts
+
+
+---
+
+# Dashboard Gallery
+
+## 1. Enterprise SOC Overview
+
+![Enterprise Overview](images/overview-dashboard.png)
+
+Provides a single-pane-of-glass operational overview combining network, endpoint, DNS and identity monitoring.
+
+---
+
+## 2. Endpoint Security Overview
+
+![Endpoint Security](images/overview-endpoint-security.png)
+
+Combines Sophos endpoint health with Cisco Umbrella DNS security metrics to improve operational visibility.
+
+---
+
+## 3. Cisco Meraki — Network Health
+
+![Meraki Network Health](images/meraki-network-health.png)
+
+Displays enterprise network health including device availability, uptime, client connectivity and infrastructure status.
+
+---
+
+## 4. Cisco Meraki — WAN Connectivity
+
+![Meraki Connectivity](images/meraki-connectivity.png)
+
+Visualises WAN connectivity, uplink status and network resilience across enterprise locations.
+
+---
+
+## 5. Cisco Meraki — Client Activity
+
+![Meraki Client Activity](images/meraki-client-activity.png)
+
+Provides visibility into connected clients, network usage and operational activity.
+
+---
+
+## 6. Sophos Endpoint Monitoring
+
+![Sophos Endpoint](images/sophos-endpoints.png)
+
+Displays endpoint inventory, device health, security alerts and endpoint protection status.
+
+---
+
+## 7. Cisco Umbrella DNS Security
+
+![Cisco Umbrella](images/umbrella-dns-security.png)
+
+Provides DNS threat monitoring including blocked requests, threat categories and DNS activity.
 
 ---
 
 # My Responsibilities
 
-- Developed Grafana dashboards using Kusto Query Language (KQL)
-- Queried security data from Azure Data Explorer (ADX)
-- Designed dashboard layouts based on operational requirements
-- Built visualisations for security operations and infrastructure monitoring
-- Validated dashboard accuracy using production data
-- Worked with internal stakeholders to refine dashboard requirements and improve usability
+- Developed production Grafana dashboards using Kusto Query Language (KQL)
+- Queried operational data from Azure Data Explorer (ADX)
+- Designed dashboard layouts based on SOC operational requirements
+- Built reusable visualisation components
+- Validated dashboard accuracy using production monitoring data
+- Worked with stakeholders to improve dashboard usability
 
 ---
 
 # Technical Stack
 
-| Component | Technology |
-|-----------|------------|
+| Area | Technology |
+|------|------------|
 | Dashboard Platform | Grafana |
-| Query Language | Kusto Query Language (KQL) |
 | Data Platform | Azure Data Explorer (ADX) |
-| Data Sources | Cisco Meraki, Sophos Central, Cisco Umbrella, Microsoft Entra ID |
-
----
-
-# Dashboards Delivered
-
-## 1. IT Command Centre Dashboard
-
-A high-level operational dashboard providing a single-pane-of-glass view across enterprise security and infrastructure.
-
-Key metrics included:
-
-- Device Health
-- Offline Devices
-- Endpoint Status
-- Security Alerts
-- DNS Threat Overview
-- User Activity
-- Infrastructure Status
-
----
-
-## 2. Cisco Meraki Network Dashboard
-
-Network monitoring dashboard providing operational visibility into enterprise network infrastructure.
-
-Features:
-
-- Device Status
-- Uplink Status
-- Client Statistics
-- Network Availability
-- Security Events
-- WAN Health
-
----
-
-## 3. Sophos Endpoint Dashboard
-
-Endpoint security dashboard built for monitoring managed endpoints.
-
-Features:
-
-- Endpoint Health
-- Device Inventory
-- Open Security Alerts
-- High Severity Events
-- Endpoint Protection Status
-
----
-
-## 4. Cisco Umbrella Dashboard
-
-DNS security dashboard providing visibility into DNS activity and security events.
-
-Features:
-
-- DNS Requests
-- Threat Categories
-- Blocked Requests
-- Top Domains
-- Security Events
-- Identity-based Filtering
+| Query Language | Kusto Query Language (KQL) |
+| Network Monitoring | Cisco Meraki |
+| Endpoint Security | Sophos Central |
+| DNS Security | Cisco Umbrella |
+| Identity Monitoring | Microsoft Entra ID |
 
 ---
 
 # Technical Challenges
 
-During development, several technical challenges were encountered, including:
+During development several technical challenges were encountered, including:
 
-- Building efficient KQL queries for large datasets
+- Optimising KQL queries for large datasets
 - Adapting dashboards to different data schemas
 - Improving dashboard performance
-- Designing dashboards suitable for SOC operational workflows
-- Validating dashboard accuracy against production monitoring data
+- Designing dashboards for SOC operational workflows
+- Validating dashboard accuracy against production data
+- Refining dashboard layouts based on stakeholder feedback
 
-These challenges required iterative query optimisation and continuous testing before deployment.
+These challenges required continuous testing, query optimisation and dashboard refinement.
 
 ---
 
-# Project Outcomes
+# Business Impact
 
-The project successfully delivered multiple production dashboards covering:
+The completed dashboards provided SOC analysts with a centralised monitoring interface covering:
 
 - Enterprise infrastructure monitoring
 - Network visibility
 - Endpoint monitoring
 - DNS security monitoring
+- Identity monitoring
 
-The dashboards provided SOC analysts with a centralised monitoring interface, improving operational visibility across multiple security platforms.
+The project improved operational visibility by consolidating multiple security platforms into a unified dashboard experience.
 
 ---
 
@@ -134,9 +152,9 @@ The dashboards provided SOC analysts with a centralised monitoring interface, im
 - Kusto Query Language (KQL)
 - Security Monitoring
 - SOC Operations
-- Data Visualisation
+- Dashboard Design
 - Infrastructure Monitoring
-- Network Security Monitoring
+- Network Monitoring
 - Endpoint Security Monitoring
 - DNS Security Monitoring
 - Stakeholder Communication
@@ -145,6 +163,6 @@ The dashboards provided SOC analysts with a centralised monitoring interface, im
 
 # Lessons Learned
 
-This project demonstrated that effective SOC dashboards require more than technical visualisation skills.
+This project reinforced the importance of designing dashboards around operational workflows rather than simply visualising data.
 
-A successful dashboard must also reflect operational workflows, business requirements, and the daily needs of SOC analysts. Close collaboration with stakeholders and continuous iteration were essential to delivering dashboards that were both technically accurate and operationally useful.
+Close collaboration with stakeholders and iterative dashboard improvements were essential to delivering dashboards that were both technically accurate and operationally valuable.
