@@ -96,7 +96,5 @@ soc-analyst-home-lab/
 
 Splunk, SPL, Sysmon, Windows Event Logs, Active Directory, DNS, Entra ID, Intune, Microsoft Defender for Endpoint, Sophos Endpoint, Suricata, Cisco Meraki concepts, KQL, PowerShell, Linux administration, MITRE ATT&CK mapping, alert triage, detection engineering, incident response, and technical documentation.
 
-## About me
 
-I am an Australian permanent resident based in Sydney, building my career in security operations. My background combines SOC monitoring, endpoint and identity administration, SIEM dashboard development, and hands-on investigation experience.
 
